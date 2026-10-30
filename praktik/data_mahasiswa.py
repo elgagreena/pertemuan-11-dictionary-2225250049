@@ -27,7 +27,7 @@ hasil = cari_mahasiswa(data_mahasiswa, nim)
 if hasil is not None:
     print(f"{nim}: {hasil}")
 else:
-    print("Data tidak ditemukan")
+    print(f"{nim}: Data tidak ditemukan")
 
 nim = "A999"
 hasil = cari_mahasiswa(data_mahasiswa, nim)
@@ -35,7 +35,7 @@ hasil = cari_mahasiswa(data_mahasiswa, nim)
 if hasil is not None:
     print(f"{nim}: {hasil}")
 else:
-    print("Data tidak ditemukan")
+    print(f"{nim}: Data tidak ditemukan")
 
 data_mahasiswa["A006"] = {
     "nama": "Fajar",

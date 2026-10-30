@@ -20,14 +20,14 @@ python3 praktik/data_mahasiswa.py
 
 ## Test Case
 
-| Input/Aksi                         | Hasil yang Diharapkan              | Hasil Aktual             | Status   |
-| ---------------------------------- | ---------------------------------- | ------------------------ | -------- |
-| Mencari NIM A003                   | Data mahasiswa Citra ditemukan     | Data Citra ditemukan     | Berhasil |
-| Mencari NIM A999                   | Data tidak ditemukan               | Belum diuji              | Belum    |
-| Mengubah nilai A002 menjadi 82     | Nilai Budi berubah menjadi 82      | Nilai Budi menjadi 82    | Berhasil |
-| Menambahkan data A006              | Data Fajar berhasil ditambahkan    | Data Fajar ditambahkan   | Berhasil |
-| Menampilkan seluruh data mahasiswa | Seluruh data mahasiswa ditampilkan | Seluruh data ditampilkan | Berhasil |
+| Input/Aksi                         | Hasil yang Diharapkan              | Hasil Aktual                       | Status   |
+| ---------------------------------- | ---------------------------------- | ---------------------------------- | -------- |
+| Mencari NIM A003                   | Data mahasiswa Citra ditemukan     | A003: Data Citra ditemukan         | Berhasil |
+| Mencari NIM A999                   | Data tidak ditemukan               | A999: Data tidak ditemukan         | Berhasil |
+| Mengubah nilai A002 menjadi 82     | Nilai Budi berubah menjadi 82      | Nilai Budi menjadi 82              | Berhasil |
+| Menambahkan data A006              | Data Fajar berhasil ditambahkan    | Data Fajar ditambahkan             | Berhasil |
+| Menampilkan seluruh data mahasiswa | Seluruh data mahasiswa ditampilkan | Seluruh data A001–A006 ditampilkan | Berhasil |
 
 ## Refleksi
 
-Kesalahan akses key yang ditemukan adalah ketika mencoba mengakses NIM yang tidak tersedia menggunakan tanda kurung siku, sehingga dapat menyebabkan KeyError. Kesalahan tersebut diperbaiki dengan menggunakan method get() agar program dapat mengambil data dengan aman dan mengembalikan None jika NIM tidak ditemukan.
+Kesalahan akses key yang ditemukan adalah ketika mencari NIM yang tidak tersedia menggunakan tanda kurung siku, yang dapat menyebabkan KeyError. Kesalahan tersebut diperbaiki dengan menggunakan method get() pada fungsi cari_mahasiswa() sehingga pencarian NIM yang tidak tersedia dapat ditangani dan program menampilkan pesan "Data tidak ditemukan".
